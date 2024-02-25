@@ -4,7 +4,15 @@
 Now, start the server:
 <img width="1713" alt="image" src="https://github.com/rahulvaish/gRPC-Java/assets/689226/b0fb2877-ab05-4c41-8912-7d54e7abdccf">
 
-### client:
-<img width="1627" alt="image" src="https://github.com/rahulvaish/gRPC-Java/assets/689226/e392f402-a452-4bb8-b606-80374f3e74e9">
+### Client: When the defined deadline(10 secs) is beyond the server's processing time (5 secs)
+<img width="1398" alt="image" src="https://github.com/rahulvaish/gRPC-Java/assets/689226/b143b35e-c800-40ef-8738-50f55fa790c3">
 Now, start the client:
-<img width="1719" alt="image" src="https://github.com/rahulvaish/gRPC-Java/assets/689226/da437108-aa7b-4ee3-8fb4-ae838f49f11a">
+<img width="1709" alt="image" src="https://github.com/rahulvaish/gRPC-Java/assets/689226/09a84bcf-d0ff-4f88-ad9c-f570a8785bc6">
+<br/>
+<br/>
+<br/>
+
+### Client: When the defined deadline (1 sec) is less the server's processing time (5 secs)
+<img width="1388" alt="image" src="https://github.com/rahulvaish/gRPC-Java/assets/689226/4d0324fe-13ee-49b3-9cb6-2131ce04edfb">
+Now, start the client:
+<img width="1708" alt="image" src="https://github.com/rahulvaish/gRPC-Java/assets/689226/19c77dde-1eca-462c-b05a-f3170cd63236">
