@@ -37,6 +37,7 @@ public class Client {
         CountDownLatch latch = new CountDownLatch(1);
 
         StreamObserver<GreetingRequest> stream = stub.longGreet(new StreamObserver<GreetingResponse>() {
+           //Executes when the server sends a response.
             @Override
             public void onNext(GreetingResponse response) {
                 System.out.println("RESPONSE FROM SERVER COMES IN ONE SHOT (AFTER 10 SECS)");

@@ -10,12 +10,19 @@ public class GreetingServiceImpl extends GreetingServiceGrpc.GreetingServiceImpl
         StringBuilder sb = new StringBuilder();
 
         return new StreamObserver<GreetingRequest>() {
+            //Iterate through the request, and pick Name#1,
+            //Prefix "Hello" and PostFix Next Line
+            //---------------------------------------------
+            //Iterate through the request, and pick Name#2,
+            //Prefix "Hello" and PostFix Next Line
+            //---------------------------------------------
+            //Iterate through the request, and pick Name#3,
+            //Prefix "Hello" and PostFix Next Line
             @Override
             public void onNext(GreetingRequest request) {
                 sb.append("Hello ")
                         .append(request.getFirstName())
                         .append("!\n");
-
             }
 
             @Override
@@ -23,6 +30,7 @@ public class GreetingServiceImpl extends GreetingServiceGrpc.GreetingServiceImpl
                 responseObserver.onError(t);
             }
 
+            //The closing call - Send complete stringbuffer(as string) back to client, in one shot go!
             @Override
             public void onCompleted() {
                 try{
